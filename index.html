@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carbon Footprint Calculator</h1>
+        
+        <!-- Vehicle Selection Form -->
+        <div class="vehicle-selection">
+            <label for="vehicle">Choose your vehicle:</label>
+            <select id="vehicle">
+                <option value="car">Car</option>
+                <option value="truck">Truck</option>
+                <option value="motorbike">Motorbike</option>
+                <option value="bus">Bus</option>
+            </select>
+        </div>
+
+        <!-- Vehicle Info Display -->
+        <div id="vehicle-info">
+            <p id="fuel-type"></p>
+            <p id="fuel-consumption"></p>
+            <p id="emission-factor"></p>
+        </div>
+
+        <!-- Distance Input -->
+        <div class="distance-input">
+            <label for="distance">Enter distance traveled (in km):</label>
+            <input type="number" id="distance" placeholder="Distance in km" required>
+        </div>
+
+        <button onclick="calculateCarbonFootprint()">Calculate Carbon Footprint</button>
+
+        <div id="result"></div>
+        <div id="suggestions"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
